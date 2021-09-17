@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@media only screen and (min-width: 375px) {
+    .dekstop{
+        padding: 30px 30px;
+        font-family: Roboto;
+        font-size: 50px;
+    }
+    .Mobile{
+        display: none;
+    }
+  }
+@media only screen and (max-width: 375px) {
+    .dekstop{
+        display: none;
+    }
+    .Mobile{
+        display: block;
+    }
+}
+/* body{
+    max-width: 375px;
+    max-height: 812px;
+} */
+/* Nav Bar */
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    position: absolute;
+    width: 336px;
+    height: 70px;
+    padding: 44px 14px 698px 25px;
+
+}
+.heading{
+    font-family: Roboto;
+    width: 104px; /* 90px */
+    height: 23.44px;
+    line-height: 23px;
+    color: #000000;
+}
+.elements{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+}
+#element-1,
+#element-2,
+#element-3,
+#element-4{
+    position: absolute;
+    padding-top: 31px;
+    color: #969696;
+}
+#element-1{ 
+    width: 79px; 
+    height: 16px; 
+    color: #464646;
+}
+#element-2{
+    width: 50px;
+    height: 16px;
+    padding-left: 102px;
+}
+#element-3{
+    width: 92px; 
+    height: 16px;
+    padding-left: 178px;
+}
+#element-4{
+    width: 42px;
+    height: 16px;
+    padding-left: 294px;
+}
+.wallpaper{
+    width: 375px;
+    height: 249px;
+    padding-top: 144px;
+    border-radius: 40px 40px 0px 0px;
+}
+.container{
+    position: absolute;
+    width: 375px;
+    height: 451px;
+    border-radius: 40px 40px 0px 0px;
+    background: #FDFDFD;
+    top: 361px;
+}
+.container-1,
+.container-2,
+.container-3,
+.container-4{
+    position: absolute;
+    width: 153px;
+    height: 153px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 71px 10px rgba(226, 218, 222, 0.3);
+    border-radius: 19px;
+}
+.container-1{
+    left: 25px;
+    top: 32px;  
+}
+.container-2{
+    left: 199px;
+    top: 32px;
+}
+.container-3{
+    left: 25px;
+    top: 206px;
+}
+.container-4{
+    left: 199px;
+    top: 206px;
+}
+footer{
+    position: absolute;
+    width: 375px;
+    height: 71px;
+    top: 380px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 70px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 0px;
+}
+#air_cond,
+#led-bulb,
+#television,
+#speaker{
+    position: absolute;
+    width: 102px;
+    height: 16px;
+    left: 19px;
+    top: 69px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+#air_cond_type,
+#led-bulb-type,
+#television-type,
+#speaker-type{
+    position: absolute;
+    width: 73px;
+    height: 14px;
+    left: 19px;
+    top: 90px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    color: #969696;
+}
+.circular{
+    position: absolute;
+width: 40px;
+height: 40px;
+left: 43px;
+top: 17px;
+border-radius: 50%;
+background: #E3711E;
+}
+#house{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 23.23px;
+}
+#user_head{
+    position: absolute;
+    left: 120.76px;
+    top: 28px;
+}
+#user_body{
+    position: absolute;
+    top: 36.47px;
+    left: 118px;
+}
+#adds-on{
+    position: absolute;
+    top: 28px;
+    left: 180px;
+
+
+}
+#settings{
+    position: absolute;
+    top: 28px;
+    left: 243px;
+}
+#more-button{
+    position: absolute;
+    top: 33px;
+    left: 305px;
+}
+#ac_img,
+#bulb-img{
+    position: absolute;
+    left: 19px;
+    top: 27px;
+}
+#tv-img{
+    position: absolute;
+    top: 26px;
+    left: 18px;
+
+}
+#speaker-img{
+    position: absolute;
+    top: 27px;
+    left: 20px;
+
+}
+.toggle-button{
+    position: absolute;
+    left: 19px;
+    top: 118px;
+}
+/* toggle button */   /* toggle button */
+.switch {
+    
+    position: relative;
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+  }
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s ;
+  }
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    left: 1px;
+    top: 1px;
+  
+    background-color: #E3711E;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+}
+  input:checked + .slider:before {
+    -webkit-transform: translateX(9px);
+    -ms-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+
+
+  
+  /* Rounded sliders */
+  .slider.round {
+    background: white;
+    border: 1px solid #E3711E;
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* #bulb-img svg path{
+    fill : orange ;
+} */
+/* 
+#ac_img svg path {
+    stroke: red;
+} */
+/* #tv-img svg path {
+    fill: red;
+} */
